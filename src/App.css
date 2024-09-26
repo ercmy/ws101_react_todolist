@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.todo-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: Courier, monospace;
+}
+
+.todo-list {
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* No Tasks */
+.no-tasks {
+  text-align: center;
+  color: #888;
+  margin-top: 180px;
+  margin-bottom: 180px;
+  font-size: 1.2rem;
+}
+
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+/* Add Task */
+.add-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-task input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.add-task button {
+  background-color: #4780c2;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* All, Pending, Completed */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.tabs button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  font-size: 17px;
+  padding: 8px 15px;
+  margin: 0 10px; 
+  border-radius: 15px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button:hover {
+  background-color: #4780c2;
+  color: white;
+}
+
+.tabs button.active {
+  background-color: #4780c2;
+  color: white;
+}
+
+/* Undo and Delete */
+.undo-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.undo-button:hover {
+  background-color: #555;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
